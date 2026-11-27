@@ -1,0 +1,54 @@
+{
+  "expo": {
+    "name": "DOTA PRO LAB",
+    "slug": "dota-pro-lab",
+    "scheme": "dotaprolab",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#07070C"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-sqlite",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash.png",
+          "imageWidth": 300,
+          "resizeMode": "contain",
+          "backgroundColor": "#07070C",
+          "dark": {
+            "image": "./assets/splash.png",
+            "backgroundColor": "#07070C"
+          }
+        }
+      ],
+      "expo-dev-client"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.dotaprolab.mobile",
+      "buildNumber": "1",
+      "requireFullScreen": false,
+      "infoPlist": {
+        "UIUserInterfaceStyle": "Dark",
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "com.dotaprolab.mobile"
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    }
+  }
+}
